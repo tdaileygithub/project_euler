@@ -8,9 +8,9 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/inc        
 )
 
-add_executable(problem_1            src/main.cpp src/problem1.cpp)
-add_executable(unittest_1           src/test.cpp src/problem1.cpp)
-add_test(problem_1 unittest_1       src/problem1.cpp)
+add_executable(problem_0001            src/main_0001.cpp src/problem_0001.cpp)
+add_executable(unittest_0001           src/test_0001.cpp src/problem_0001.cpp)
+add_test(problem_0001 unittest_0001    src/problem_0001.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
