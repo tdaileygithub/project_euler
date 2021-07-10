@@ -32,3 +32,5 @@
 *.app
 
 problem1/build
+problem1/doxy/html
+problem1/doxy/latex
