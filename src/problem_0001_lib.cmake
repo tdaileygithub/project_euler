@@ -7,4 +7,4 @@ configure_file(problem_0001_lib.in problem_0001_lib.pc @ONLY)
 install(TARGETS problem_0001_lib
     LIBRARY             DESTINATION ${CMAKE_INSTALL_LIBDIR}
     PUBLIC_HEADER       DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
-install(FILES ${CMAKE_BINARY_DIR}/mylib.pc DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig)
+install(FILES ${CMAKE_BINARY_DIR}/problem_0002_lib.pc DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig)

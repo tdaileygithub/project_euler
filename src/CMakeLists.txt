@@ -11,6 +11,7 @@ include(CTest)
 
 #user includes
 include (problem_0001_lib.cmake)
+include (problem_0002_lib.cmake)
 
 set(CPACK_PROJECT_NAME          ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION       ${PROJECT_VERSION}) 
@@ -25,4 +26,8 @@ include_directories(
 add_executable(problem_0001             src/main_0001.cpp)
 TARGET_LINK_LIBRARIES( problem_0001     ${Boost_LIBRARIES} problem_0001_lib)
 
+add_executable(problem_0002             src/main_0002.cpp)
+TARGET_LINK_LIBRARIES( problem_0002     ${Boost_LIBRARIES} problem_0002_lib)
+
 add_boost_test(src/test_0001.cpp problem_0001_lib)
+add_boost_test(src/test_0002.cpp problem_0002_lib)
