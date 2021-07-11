@@ -14,16 +14,3 @@ BOOST_AUTO_TEST_CASE(sum_multiples_of_3_or_5_below_1000)
     int res = sum_mults(multof, below);
     BOOST_TEST( 233168 == res );
 }
-
-int number()
-{
-    return 22;
-}
-
-BOOST_AUTO_TEST_CASE(first_test) // Declares a test case with name "first_test"
-{
-  int i = 1;
-  BOOST_TEST(i); // Checks if i is non-zero
-
-  BOOST_TEST(number() == 2);  // Checks whether the value returned from number method is 2
-}

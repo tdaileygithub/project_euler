@@ -7,7 +7,7 @@ include(GNUInstallDirs)
 include(doxygen.cmake)
 include(boost.cmake)
 include(BoostTestHelpers.cmake)
-include(CTest)
+include(CTest) 
 
 #user includes
 include (problem_0001_lib.cmake)
@@ -22,8 +22,7 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/inc
 ) 
 
-add_executable(problem_0001            src/main_0001.cpp)
-
-TARGET_LINK_LIBRARIES( problem_0001  ${Boost_LIBRARIES} problem_0001_lib)
+add_executable(problem_0001             src/main_0001.cpp)
+TARGET_LINK_LIBRARIES( problem_0001     ${Boost_LIBRARIES} problem_0001_lib)
 
 add_boost_test(src/test_0001.cpp problem_0001_lib)
