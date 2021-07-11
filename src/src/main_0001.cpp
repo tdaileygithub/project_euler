@@ -33,10 +33,7 @@ int main(int ac, char** av)
             constexpr int below             = 1000;
             int res = sum_mults(multof, below);
             std::cout << "sum: " << res << std::endl;
-
-            return 233168 == res ? 0 : 1;
-        }
-        throw;
+        }        
     }
     catch(std::exception& e) 
     {
