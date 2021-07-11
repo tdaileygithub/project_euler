@@ -3,7 +3,7 @@ project(project_euler VERSION 0.1.0 DESCRIPTION "Project Euler Solutions in c++"
 
 #system includes
 include(CPack)
-include(GNUInstallDirs)
+include(GNUInstallDirs) 
 include(doxygen.cmake)
 include(boost.cmake)
 include(BoostTestHelpers.cmake)
@@ -20,7 +20,7 @@ enable_testing()
 
 include_directories(
         ${PROJECT_SOURCE_DIR}/inc
-)
+) 
 
 add_executable(problem_0001            src/main_0001.cpp)
 

@@ -1,6 +1,11 @@
+#
+# https://vicrucann.github.io/tutorials/quick-cmake-doxygen/
+# https://cmake.org/cmake/help/latest/module/FindDoxygen.html
 # Doxygen
-
-find_package(Doxygen REQUIRED)
+#
+#REQUIRED COMPONENTS dot mscgen dia
+#
+find_package(Doxygen)
 
 # set input and output files
 set(DOXYGEN_IN  ${CMAKE_CURRENT_SOURCE_DIR}/doxy/Doxyfile.in)

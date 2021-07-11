@@ -3,4 +3,5 @@ project euler sample problems
 
 # system installs
 
-    sudo apt-get intall doxygen graphviz libboost-all-dev
+    sudo apt-get intall doxygen graphviz dia mscgen 
+    sudo apt-get intall libboost-all-dev 
